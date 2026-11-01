@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nclvmass-net"
+version = "1.0"
+requires-python = ">=3.10"
+description = "An AI Model for Left Ventricular Myocardium Segmentation and Quantification from Non-Contrast Cardiac CT"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Healthcare Industry",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+authors = [
+    { name = "Jia-Da Li", email = "jiadali@ntu.edu.tw" },
+    { name = "Tzung-Dau Wang", email = "tdwang@ntu.edu.tw" },
+    { name = "Wen-Jeng Lee", email = "wenjeng@gmail.com" },
+    { name = "Cheng-Chia Huang", email = "r12922188@csie.ntu.edu.tw" },
+    { name = "Chu-Song Chen", email = "chusong@csie.ntu.edu.tw" }
+]
+
+dependencies = [
+    "nnunetv2>=2.6.0",
+    "huggingface-hub",
+]
+
+[project.optional-dependencies]
+
+[project.urls]
+codes = "https://github.com/AI-Application-and-Integration-Lab/ncLVMass-Net"
+models = "https://huggingface.co/Jia-Da/ncLVMass-Net"
+
+[project.scripts]
+nclvmnet = "nclvmnet.nclvmnet:main"
