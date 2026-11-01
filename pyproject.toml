@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nclvmass-net"
-version = "1.1"
+version = "1.2"
 requires-python = ">=3.10"
 description = "An AI Model for Left Ventricular Myocardium Segmentation and Quantification from Non-Contrast Cardiac CT"
 readme = "README.md"

@@ -14,7 +14,7 @@ nclvmnet -i input_dir -o output_dir
 ```
 
 # Change pretrained model
-The ncLVMass-Net pretrained model weights are automatically downloaded from [Hugging Face](https://huggingface.co/NTU-AI2Lab/ncLVMass-Net) and stored in the local Hugging Face cache. If you would like to use a different pretrained model, specify the model directory name with the `--dataset` argument and the parent directory containing the model with `--mdl-local-dir`.
+The ncLVMass-Net pretrained model weights are automatically downloaded from [Hugging Face](https://huggingface.co/AI2Lab-NTU/ncLVMass-Net) and stored in the local Hugging Face cache. If you would like to use a different pretrained model, specify the model directory name with the `--dataset` argument and the parent directory containing the model with `--mdl-local-dir`.
 
 For example, if you have previously downloaded the [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) `heartchambers_highres` model (make sure you have obtained the appropriate [license](https://backend.totalsegmentator.com/license-academic/)), you can switch to this model for comparison.
 
@@ -24,7 +24,7 @@ nclvmnet -i ct.nii.gz -o output_dir_TS --mdl-local-dir $HOME/.totalsegmentator/n
 
 For non-commercial purposes, you may download the pretrained model weights directly from Hugging Face and fine-tune them on your own data.
 ```
-hf download --local-dir $HOME/path/to/ncLVMass-Net/model NTU-AI2Lab/ncLVMass-Net
+hf download --local-dir $HOME/path/to/ncLVMass-Net/model AI2Lab-NTU/ncLVMass-Net
 ```
 
 # Further development
