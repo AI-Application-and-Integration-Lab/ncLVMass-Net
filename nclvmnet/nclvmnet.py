@@ -30,8 +30,7 @@ def main():
     # ---------------------------------
     if args.mdl_local_dir is None:
         # Download repository from huggingface and get the local path of the model folder
-        repo_id = "Jia-Da/ncLVMass-Net"
-        # repo_id = "NTU-AI2Lab/ncLVMass-Net"
+        repo_id = "NTU-AI2Lab/ncLVMass-Net"
         readme_path = try_to_load_from_cache(repo_id=repo_id, filename="README.md")
         if readme_path is not None:
             args.mdl_local_dir = os.path.dirname(readme_path)
